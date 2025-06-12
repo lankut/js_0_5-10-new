@@ -10,5 +10,16 @@
 */
 
 function truncate(str, maxLength) {
-  // your code
+  let count = str.length
+  let arr = []
+  if (count > maxLength) {
+    for (let i = 0; i < maxLength; i++) {
+      arr.push(str[i])
+    }
+    const res = arr.join('') + "..."
+    return res
+  } else {
+    return str
+  }
+
 }
