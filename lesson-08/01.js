@@ -18,5 +18,5 @@ function capitalizeWords(words) {
   }
 
   let newStr = arr.join('')
-  console.log(newStr);
+  return newStr
 }
